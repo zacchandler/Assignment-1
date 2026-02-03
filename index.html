@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FocusForge - Wikipedia</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#3366cc',
+                        'background-light': '#ffffff',
+                        'background-dark': '#101418',
+                        'wiki-gray-light': '#f6f6f6',
+                        'wiki-gray-dark': '#202122',
+                        'wiki-border-light': '#a2a9b1',
+                        'wiki-border-dark': '#444444',
+                    },
+                    fontFamily: {
+                        display: ['serif'],
+                        sans: ['sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .wiki-link {
+            color: #3366cc;
+            text-decoration: none;
+        }
+        .wiki-link:hover {
+            text-decoration: underline;
+        }
+        .dark .wiki-link {
+            color: #6699ff;
+        }
+        .sidebar-item {
+            padding: 4px 8px;
+            font-size: 0.875rem;
+        }
+        .content-section {
+            border-bottom: 1px solid #a2a9b1;
+            margin-bottom: 0.5rem;
+            padding-bottom: 0.2rem;
+            font-family: serif;
+        }
+        .dark .content-section {
+            border-bottom: 1px solid #444444;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-background-light dark:bg-background-dark text-gray-900 dark:text-gray-200 font-sans leading-relaxed">
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
